@@ -5,6 +5,10 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/*
+ * @author Sahil Nokhwal
+ * SID: S525352
+ */
 public class CarPanel extends JPanel {
 
 	private CarPanel car;
