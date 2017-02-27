@@ -13,10 +13,6 @@ import java.io.IOException;
 
 import javax.swing.JPanel;
 
-/*
- * @author Sahil Nokhwal
- * SID: S525352
- */
 public class DropTargetPanel extends JPanel implements DropTargetListener {
 
 

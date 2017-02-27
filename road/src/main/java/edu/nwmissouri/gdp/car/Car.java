@@ -13,9 +13,9 @@ import edu.nwmissouri.gdp.road.SimulationPanel;
  * and open the template in the editor.
  */
 
-/*
- * @author Sahil Nokhwal
- * SID: S525352
+/**
+ *
+ * @author S525747
  */
 public class Car {
         private static final int INCREMENT = 5;

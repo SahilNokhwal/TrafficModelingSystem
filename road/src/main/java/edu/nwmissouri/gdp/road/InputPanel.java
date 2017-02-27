@@ -5,10 +5,6 @@ import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-/*
- * @author Sahil Nokhwal
- * SID: S525352
- */
 public class InputPanel extends JPanel{
 
 	private InputPanel inputPanel ;

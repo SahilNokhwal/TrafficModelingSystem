@@ -11,10 +11,6 @@ import javax.swing.SwingUtilities;
 import edu.nwmissouri.gdp.car.CarPanel;
 import edu.nwmissouri.gdp.car.DrawCar;
 
-/*
- * @author Sahil Nokhwal
- * SID: S525352
- */
 public class SecondScreen {
 
 	private JFrame mainFrame;

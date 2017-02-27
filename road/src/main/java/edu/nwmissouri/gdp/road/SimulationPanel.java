@@ -8,10 +8,6 @@ import javax.swing.JPanel;
 
 import edu.nwmissouri.gdp.car.Car;
 
-/*
- * @author Sahil Nokhwal
- * SID: S525352
- */
 public class SimulationPanel extends JPanel{
 
 	private List<Car> cars;

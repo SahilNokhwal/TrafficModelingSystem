@@ -12,10 +12,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-/*
- * @author Sahil Nokhwal
- * SID: S525352
- */
 public class FourWayTest {
 
 	private static JFrame mainFrame;

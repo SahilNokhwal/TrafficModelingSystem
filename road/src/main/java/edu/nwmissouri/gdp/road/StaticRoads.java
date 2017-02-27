@@ -6,10 +6,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-/*
- * @author Sahil Nokhwal
- * SID: S525352
- */
 public class StaticRoads {
 
 	private JFrame mainFrame;

@@ -5,10 +5,7 @@ import java.awt.Graphics;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
-/*
- * @author Sahil Nokhwal
- * SID: S525352
- */
+
 public class StaticTwoWayPanel extends JPanel{
 
 	public static Color lineColor = Color.yellow; 
