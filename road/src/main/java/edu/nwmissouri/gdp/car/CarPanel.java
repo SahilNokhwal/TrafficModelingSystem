@@ -8,11 +8,11 @@ import javax.swing.JPanel;
 public class CarPanel extends JPanel {
 
 	private CarPanel car;
-	private static final int INCREMENT = 1;
-	private int carInitialXPosition = 0;
-	private int carInitialYPosition = 270;
-	private static final int carHorizontalPath = 900;
-	private static final int carVerticalPath = 100;
+	private static  int INCREMENT;
+	private int carInitialXPosition;
+	private int carInitialYPosition;
+	private static  int carHorizontalPath;
+	private static  int carVerticalPath;
 	private int carSpeed=120;
 	private int sleepValue = 1000/carSpeed; 
 	
@@ -108,6 +108,13 @@ public class CarPanel extends JPanel {
 	private void valueSetter(){
 		carWidth = 30;
 		carHeight = 15;
+		
+		INCREMENT = 1;
+		
+		carInitialXPosition = 0;
+		carInitialYPosition = 270;
+		carHorizontalPath = 900;
+		carVerticalPath = 100;
 
 	}
 }
