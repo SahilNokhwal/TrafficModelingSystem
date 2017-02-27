@@ -16,6 +16,10 @@ import java.awt.dnd.DragSourceListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+/*
+ * @author Sahil Nokhwal
+ * SID: S525352
+ */
 public class DraggableTJunctionPanel extends JPanel implements DragGestureListener, DragSourceListener {
 
 	private DraggableTJunctionPanel draggableTJunctionPanel;
