@@ -7,6 +7,10 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+/*
+ * @author Sahil Nokhwal
+ * SID: S525352
+ */
 public class DraggableComponentPanel extends JPanel{
 
 	private DraggableComponentPanel draggableComponentPanel ;

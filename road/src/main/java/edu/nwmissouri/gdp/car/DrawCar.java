@@ -13,7 +13,10 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
 import edu.nwmissouri.gdp.road.SimulationPanel;
-
+/*
+ * @author Sahil Nokhwal
+ * SID: S525352
+ */
 public class DrawCar extends JPanel{
     private static final int D_W = 225;
     private static final int D_H = 315;
