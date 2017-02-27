@@ -20,12 +20,12 @@ import javax.swing.JPanel;
 public class DraggableTwoWayPanel extends JPanel implements DragGestureListener, DragSourceListener {
 
 	private DraggableTwoWayPanel draggableTwoWayPanel;
-	private static Color pathColor=  Color.black;
-	int draggablePanelWidth = 130;
-	int draggablePanelHeight = 130;
-	Color draggablePanelColor = new Color(220, 220, 220);
+	private static Color pathColor;
+	int draggablePanelWidth;
+	int draggablePanelHeight;
+	Color draggablePanelColor;
 	
-		DragSource dragSource;
+	DragSource dragSource;
 
 		public DraggableTwoWayPanel(String text) {
 			super(null);
@@ -97,7 +97,6 @@ public class DraggableTwoWayPanel extends JPanel implements DragGestureListener,
 		
 		
 		public JPanel getDraggableTwoWayPanel() {
-		
 		draggableTwoWayPanel = new DraggableTwoWayPanel() {
 			
 				protected void paintComponent(Graphics g) {
@@ -134,5 +133,13 @@ public class DraggableTwoWayPanel extends JPanel implements DragGestureListener,
 		return draggableTwoWayPanel;
 		
 	}
+		
+		
+		private void valueSetter(){
+			pathColor =  Color.black;
+			draggablePanelWidth = 130;
+			draggablePanelHeight = 130;
+			draggablePanelColor = new Color(220, 220, 220);
+		}
 }
 
