@@ -13,9 +13,8 @@ public class CarPanel extends JPanel {
 	private int carInitialYPosition = 270;
 	private static final int carHorizontalPath = 900;
 	private static final int carVerticalPath = 100;
-	private static enum carCordinates{
-		
-	}
+	private int carSpeed=120;
+	private int sleepValue = 1000/carSpeed; 
 	
 	
 	
@@ -39,6 +38,11 @@ public class CarPanel extends JPanel {
 		return car;
 	}
 
+	
+	
+	public void collide(){
+		
+	}
 	public void move()  {
 		
 		final JPanel jp = this;
@@ -47,7 +51,7 @@ public class CarPanel extends JPanel {
 
 				while (true) {
 					try {
-						Thread.sleep(5);
+						Thread.sleep(sleepValue);
 						System.out.println("Car is moving");
 					} catch (InterruptedException e) {
 						e.printStackTrace();
@@ -81,7 +85,7 @@ public class CarPanel extends JPanel {
 				int x = 950;
 				while (true) {
 					try {
-						Thread.sleep(50);
+						Thread.sleep(sleepValue);
 						System.out.println("Car is moving");
 					} catch (InterruptedException e) {
 						e.printStackTrace();
