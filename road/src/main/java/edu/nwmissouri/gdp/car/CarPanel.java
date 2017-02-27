@@ -16,14 +16,12 @@ public class CarPanel extends JPanel {
 	private int carSpeed=120;
 	private int sleepValue = 1000/carSpeed; 
 	
-	
-	
-	
-	private int carWidth = 30;
-	private int carHeight = 15;
+	private int carWidth;
+	private int carHeight;
 
 	public CarPanel() {
 		super(null);
+		valueSetter();
 	}
 
 	public JPanel getCar() {
@@ -103,6 +101,13 @@ public class CarPanel extends JPanel {
 				}
 			}
 		}).start();
+
+	}
+	
+	
+	private void valueSetter(){
+		carWidth = 30;
+		carHeight = 15;
 
 	}
 }
