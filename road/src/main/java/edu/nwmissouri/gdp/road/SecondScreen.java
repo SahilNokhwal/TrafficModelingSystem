@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 import edu.nwmissouri.gdp.car.CarPanel;
-import edu.nwmissouri.gdp.car.DrawCar;
+
 
 /*
  * @author Sahil Nokhwal
@@ -29,7 +29,7 @@ public class SecondScreen {
 
 	
 
-	private void prepareGUI() throws InterruptedException {
+	public void prepareGUI() throws InterruptedException {
 		mainFrame = new JFrame("Traffic Modeling System");
 
 		mainFrame.setSize(frameButtomPanelWidth, frameButtomPanelHeight);
@@ -142,7 +142,7 @@ public class SecondScreen {
 
 	}
 
-	private static void valuesSetter() {
+	public static void valuesSetter() {
 		frameButtomPanelWidth = 1366;
 		frameButtomPanelHeight = 768;
 
@@ -153,13 +153,6 @@ public class SecondScreen {
 		panelButtomColor = new Color(240,248,255);
 	}
 
-	public static void main(String[] args) throws InterruptedException {
-		
-		SecondScreen secondScreen = new SecondScreen();
-		
-		valuesSetter();
-		secondScreen.prepareGUI();
-		
-	}
+	
 
 }
