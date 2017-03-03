@@ -21,6 +21,8 @@ import javax.swing.JPanel;
  * @author Sahil Nokhwal
  * SID: S525352
  */
+
+//Draggable Two Way class
 public class DraggableTwoWayPanel extends JPanel implements DragGestureListener, DragSourceListener {
 
 	private DraggableTwoWayPanel draggableTwoWayPanel;
@@ -28,92 +30,89 @@ public class DraggableTwoWayPanel extends JPanel implements DragGestureListener,
 	int draggablePanelWidth;
 	int draggablePanelHeight;
 	Color draggablePanelColor;
-	
+
 	DragSource dragSource;
 
-		public DraggableTwoWayPanel(String text) {
-			super(null);
-			//setText(text);
+	public DraggableTwoWayPanel(String text) {
+		super(null);
+		// setText(text);
 
-			dragSource = new DragSource();
+		dragSource = new DragSource();
 
-			dragSource.createDefaultDragGestureRecognizer(this, DnDConstants.ACTION_COPY_OR_MOVE, this);
+		dragSource.createDefaultDragGestureRecognizer(this, DnDConstants.ACTION_COPY_OR_MOVE, this);
 
-		}
+	}
 
-		public DraggableTwoWayPanel() {
-			// TODO Auto-generated constructor stub
-		}
+	public DraggableTwoWayPanel() {
+		// TODO Auto-generated constructor stub
+	}
 
-		public void dragGestureRecognized(DragGestureEvent evt) {
+	public void dragGestureRecognized(DragGestureEvent evt) {
 
-			Transferable transferable = new StringSelection(null);//getText());
+		Transferable transferable = new StringSelection(null);// getText());
 
-			dragSource.startDrag(evt, DragSource.DefaultCopyDrop, transferable, this);
+		dragSource.startDrag(evt, DragSource.DefaultCopyDrop, transferable, this);
 
-		}
+	}
 
-		public void dragEnter(DragSourceDragEvent evt) {
+	public void dragEnter(DragSourceDragEvent evt) {
 
-			// Called when the user is dragging this drag source and enters the
-			// drop target
+		// Called when the user is dragging this drag source and enters the
+		// drop target
 
-			System.out.println("Drag enter");
+		System.out.println("Drag enter");
 
-		}
+	}
 
-		public void dragOver(DragSourceDragEvent evt) {
+	public void dragOver(DragSourceDragEvent evt) {
 
-			// Called when the user is dragging this drag source and moves over
-			// the drop target
+		// Called when the user is dragging this drag source and moves over
+		// the drop target
 
-			System.out.println("Drag over");
+		System.out.println("Drag over");
 
-		}
+	}
 
-		public void dragExit(DragSourceEvent evt) {
+	public void dragExit(DragSourceEvent evt) {
 
-			// Called when the user is dragging this drag source and leaves the
-			// drop target
+		// Called when the user is dragging this drag source and leaves the
+		// drop target
 
-			System.out.println("Drag exit");
+		System.out.println("Drag exit");
 
-		}
+	}
 
-		public void dropActionChanged(DragSourceDragEvent evt) {
+	public void dropActionChanged(DragSourceDragEvent evt) {
 
-			// Called when the user changes the drag action between copy or move
+		// Called when the user changes the drag action between copy or move
 
-			System.out.println("Drag action changed");
+		System.out.println("Drag action changed");
 
-		}
+	}
 
-		public void dragDropEnd(DragSourceDropEvent evt) {
+	public void dragDropEnd(DragSourceDropEvent evt) {
 
-			// Called when the user finishes or cancels the drag operation
+		// Called when the user finishes or cancels the drag operation
 
-			System.out.println("Drag action End");
+		System.out.println("Drag action End");
 
-		}
+	}
 
-		
-		
-		
-		
-		public JPanel getDraggableTwoWayPanel() {
+	// Returns a JPanel as draggable road component
+	public JPanel getDraggableTwoWayPanel() {
 		draggableTwoWayPanel = new DraggableTwoWayPanel() {
-			
-				protected void paintComponent(Graphics g) {
-					super.paintComponent(g);
-					g.setColor(pathColor);
-					g.drawLine(0, 125, 250, 125);
-					g.drawLine(125, 0, 125, 250);
-				}
-			};
+
+			protected void paintComponent(Graphics g) {
+				super.paintComponent(g);
+				g.setColor(pathColor);
+				g.drawLine(0, 125, 250, 125);
+				g.drawLine(125, 0, 125, 250);
+			}
+		};
 
 		draggableTwoWayPanel.setBackground(draggablePanelColor);
 		draggableTwoWayPanel.setBounds(150, 15, draggablePanelWidth, draggablePanelHeight);
-		
+
 		JButton b11 = new JButton("o");
 		JButton b21 = new JButton("");
 		JButton b31 = new JButton("");
@@ -123,7 +122,7 @@ public class DraggableTwoWayPanel extends JPanel implements DragGestureListener,
 		b21.setBounds(0, 90, 40, 40);
 		b31.setBounds(90, 0, 40, 40);
 		b41.setBounds(90, 90, 40, 40);
-		
+
 		b11.setEnabled(false);
 		b21.setEnabled(false);
 		b31.setEnabled(false);
@@ -133,17 +132,16 @@ public class DraggableTwoWayPanel extends JPanel implements DragGestureListener,
 		draggableTwoWayPanel.add(b21);
 		draggableTwoWayPanel.add(b31);
 		draggableTwoWayPanel.add(b41);
-		
-		return draggableTwoWayPanel;
-		
-	}
-		
-		
-		private void valueSetter(){
-			pathColor =  Color.black;
-			draggablePanelWidth = 130;
-			draggablePanelHeight = 130;
-			draggablePanelColor = new Color(220, 220, 220);
-		}
-}
 
+		return draggableTwoWayPanel;
+
+	}
+
+	// Sets the values for all instance variables
+	private void valueSetter() {
+		pathColor = Color.black;
+		draggablePanelWidth = 130;
+		draggablePanelHeight = 130;
+		draggablePanelColor = new Color(220, 220, 220);
+	}
+}

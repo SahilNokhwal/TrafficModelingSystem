@@ -10,18 +10,24 @@ import javax.swing.JPanel;
  * @author Sahil Nokhwal
  * SID: S525352
  */
+
+//Static Four way road component
 public class StaticFourWayPanel extends JPanel{
 
 	public static Color lineColor = Color.yellow; 
 	private StaticFourWayPanel staticFourWayPanel;
 
 	
+	
+	//Pass null to the JPanel constructor  
 	public StaticFourWayPanel() {
 		super(null);
 
 	}
 	
 	
+	
+	// Returns a JPanel as static road component
 	public JPanel getStaticFourWayPanel() {
 		
 	

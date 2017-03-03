@@ -97,8 +97,6 @@ public class DraggableTJunctionPanel extends JPanel implements DragGestureListen
 
 		
 		
-		
-		
 		public JPanel getDraggableTJunctionPanel() {
 		
 		draggableTJunctionPanel = new DraggableTJunctionPanel() {

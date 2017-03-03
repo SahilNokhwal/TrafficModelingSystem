@@ -10,39 +10,38 @@ import javax.swing.JPanel;
  * @author Sahil Nokhwal
  * SID: S525352
  */
-public class StaticTwoWayPanel extends JPanel{
 
-	public static Color lineColor = Color.yellow; 
+//Static Two way road component
+public class StaticTwoWayPanel extends JPanel {
+
+	public static Color lineColor = Color.yellow;
 	private StaticTwoWayPanel staticTwoWayPanel;
 
-	
+	// Pass null to the JPanel constructor
 	public StaticTwoWayPanel() {
 		super(null);
 
 	}
-	
-	
+
+	// Returns a JPanel as static road component
 	public JPanel getStaticTwoWayPanel() {
-		
-	
-	staticTwoWayPanel	= new StaticTwoWayPanel() {
-		
+
+		staticTwoWayPanel = new StaticTwoWayPanel() {
+
 			protected void paintComponent(Graphics g) {
 				super.paintComponent(g);
 				g.setColor(lineColor);
 				g.drawLine(150, 0, 150, 480);
 				g.drawLine(155, 0, 155, 480);
-				
+
 				g.drawLine(0, 235, 310, 235);
 				g.drawLine(0, 240, 310, 240);
 			}
 		};
-		
-		
 
-		staticTwoWayPanel.setBackground(Color.black);//draggablePanelColor);
+		staticTwoWayPanel.setBackground(Color.black);// draggablePanelColor);
 		staticTwoWayPanel.setBounds(315, 15, 310, 480);
-		
+
 		JButton bs11 = new JButton("Stop");
 		JButton bs21 = new JButton("");
 		JButton bs31 = new JButton("");
@@ -57,15 +56,14 @@ public class StaticTwoWayPanel extends JPanel{
 		bs21.setBounds(0, 290, 105, 190);
 		bs31.setBounds(205, 0, 105, 190);
 		bs41.setBounds(205, 290, 105, 190);
-		
+
 		staticTwoWayPanel.add(bs11);
 		staticTwoWayPanel.add(bs21);
 		staticTwoWayPanel.add(bs31);
 		staticTwoWayPanel.add(bs41);
 
-	
 		staticTwoWayPanel.setOpaque(false);
-		
-	return staticTwoWayPanel;
-}
+
+		return staticTwoWayPanel;
+	}
 }

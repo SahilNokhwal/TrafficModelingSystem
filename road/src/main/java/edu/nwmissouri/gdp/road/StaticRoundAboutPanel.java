@@ -10,41 +10,39 @@ import javax.swing.JPanel;
  * @author Sahil Nokhwal
  * SID: S525352
  */
-public class StaticRoundAboutPanel extends JPanel{
+//Static Round about road component
+public class StaticRoundAboutPanel extends JPanel {
 
-	public static Color lineColor = Color.yellow; 
-	private StaticRoundAboutPanel staticRoundAboutPanel ;
+	public static Color lineColor = Color.yellow;
+	private StaticRoundAboutPanel staticRoundAboutPanel;
 
 	public StaticRoundAboutPanel() {
 		super(null);
 
 	}
-	
+
+	// Returns a JPanel as static road component
 	public JPanel getStaticRoundAboutPanel() {
 
 		staticRoundAboutPanel = new StaticRoundAboutPanel() {
-			
-			
-			
+
 			protected void paintComponent(Graphics g) {
 				super.paintComponent(g);
 				g.setColor(lineColor);
 				g.drawLine(150, 0, 150, 480);
 				g.drawLine(155, 0, 155, 480);
-				
+
 				g.drawLine(0, 235, 310, 235);
 				g.drawLine(0, 240, 310, 240);
-				
+
 				g.fillOval(125, 210, 50, 50);
 			}
 		};
-		
-		staticRoundAboutPanel.setBackground(Color.black);//draggablePanelColor);
-		
+
+		staticRoundAboutPanel.setBackground(Color.black);// draggablePanelColor);
+
 		staticRoundAboutPanel.setBounds(625, 15, 310, 480);
-		
-		
-		
+
 		JButton bs12 = new JButton("");
 		JButton bs22 = new JButton("");
 		JButton bs32 = new JButton("");
@@ -60,7 +58,6 @@ public class StaticRoundAboutPanel extends JPanel{
 		bs22.setBounds(0, 290, 105, 190);
 		bs32.setBounds(205, 0, 105, 190);
 		bs42.setBounds(205, 290, 105, 190);
-		
 
 		staticRoundAboutPanel.add(bs12);
 		staticRoundAboutPanel.add(bs22);
@@ -69,9 +66,9 @@ public class StaticRoundAboutPanel extends JPanel{
 		staticRoundAboutPanel.add(bs52);
 
 		staticRoundAboutPanel.setOpaque(false);
-		
+
 		return staticRoundAboutPanel;
 
 	}
-	
+
 }
