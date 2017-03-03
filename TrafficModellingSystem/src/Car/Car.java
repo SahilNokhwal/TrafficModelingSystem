@@ -24,6 +24,9 @@ public class Car {
         private int speed;
         private double acceleration;
         private double brakeDistance;
+       
+        AccelerationChanges acr;
+        DecelerationChanges dcr;
 
     public static int getINCREMENT() {
         return INCREMENT;
@@ -61,4 +64,16 @@ public class Car {
             this.speed +=5;
         }
         
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    
+    public int increaseSpeed(){
+        return acr.accelerate(getSpeed());
+    }
+    
+    public int decreaseSpeed(){
+        return dcr.decelerate(getSpeed());
+    }
 }

@@ -1,0 +1,40 @@
+{
+  "values":[
+      {
+	"name": "4-way",
+	"carsNumber": 30 cars/min,
+	"averageSpeed": 35 miles/hr,
+	"minimumSpeed": 25 miles/hr,
+	"maximumSpeed": 65 miles/hr,
+	"timeintervals": 1 sec,
+	"percentageAtThejunction": [25,50,25] ,
+      },
+      {
+	"name": "2-way",
+	"carsNumber": 30 cars/min,
+	"averageSpeed": 35 miles/hr,
+	"minimumSpeed": 25 miles/hr,
+	"maximumSpeed": 65 miles/hr,
+	"timeintervals": 1 sec,
+	"percentageAtThejunction": [25,70] ,
+      },
+      {
+	"name": "round-About",
+	"carsNumber": 30 cars/min,
+	"averageSpeed": 35 miles/hr,
+	"minimumSpeed": 25 miles/hr,
+	"maximumSpeed": 65 miles/hr,
+	"timeintervals": 1 sec,
+	"percentageAtThejunction": [25,50,25], 
+      },
+      {
+	"name": "T-junction",
+	"carsNumber": 30 cars/min,
+	"averageSpeed": 35 miles/hr,
+	"minimumSpeed": 25 miles/hr,
+	"maximumSpeed": 50 miles/hr,
+	"timeintervals": 1 sec,
+	"percentageAtThejunction": [75,25] ,
+      },
+   ]
+}
