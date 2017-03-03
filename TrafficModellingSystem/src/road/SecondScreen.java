@@ -138,7 +138,6 @@ public class SecondScreen {
  		
 //        Timer timer;
 //
-//  int counter = 0;
 //
 //    ActionListener a = new ActionListener() {
 //      public void actionPerformed(ActionEvent e) {
