@@ -15,6 +15,7 @@ import road.SimulationPanel;
  *
  * @author s525747
  */
+//code for car properties
 public class Car {
         private static final int INCREMENT = 5;
         int carXPosition,carYPosition;
