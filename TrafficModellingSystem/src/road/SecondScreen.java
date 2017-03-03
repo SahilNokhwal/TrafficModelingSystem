@@ -74,12 +74,6 @@ public class SecondScreen {
 
 		
 		
-//		 SwingUtilities.invokeLater(new Runnable() {
-//	            public void run() {
-//
-//	            }
-//	        });
-		
 //     	CarPanel car = new CarPanel();
 //		
 // 		simulationPanel.add(car.getCar("rightwards"));
