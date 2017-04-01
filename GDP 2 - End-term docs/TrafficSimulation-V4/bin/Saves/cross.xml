@@ -1,0 +1,55 @@
+<xml version="1.0">
+ <Road_InfraStructure Width="1024" Height="768" savedSpeed="0" savedTiming="39" BackDropFile="null">
+  <Design_Canvass Width="1000" Height="758">
+   <Junction junctionType="0" radAngle="0.0" Actuated="1" Adaptive="0" x0="287.0" y0="164.0" x1="253.0" y1="144.0" x2="287.0" y2="144.0" x3="321.0" y3="144.0" x4="321.0" y4="164.0" x5="321.0" y5="184.0" x6="287.0" y6="184.0" x7="253.0" y7="184.0" x8="253.0" y8="164.0">
+   </Junction>
+   <Junction junctionType="1" radAngle="0.0" Actuated="0" Adaptive="0" x0="600.0" y0="164.0" x1="570.0" y1="144.0" x2="604.0" y2="144.0" x3="638.0" y3="144.0" x4="638.0" y4="164.0" x5="638.0" y5="184.0" x6="604.0" y6="184.0" x7="570.0" y7="184.0" x8="570.0" y8="164.0">
+   </Junction>
+   <Junction junctionType="1" radAngle="0.0" Actuated="0" Adaptive="0" x0="287.0" y0="366.0" x1="266.0" y1="436.0" x2="287.0" y2="436.0" x3="326.0" y3="436.0" x4="326.0" y4="366.0" x5="326.0" y5="496.0" x6="287.0" y6="496.0" x7="266.0" y7="496.0" x8="266.0" y8="366.0">
+   </Junction>
+   <Junction junctionType="1" radAngle="0.0" Actuated="0" Adaptive="0" x0="600.0" y0="366.0" x1="570.0" y1="436.0" x2="600.0" y2="436.0" x3="630.0" y3="436.0" x4="630.0" y4="366.0" x5="630.0" y5="504.0" x6="600.0" y6="504.0" x7="570.0" y7="504.0" x8="570.0" y8="366.0">
+   </Junction>
+   <Junction junctionType="1" radAngle="0.0" Actuated="0" Adaptive="0" x0="287.0" y0="566.0" x1="266.0" y1="636.0" x2="287.0" y2="636.0" x3="326.0" y3="636.0" x4="326.0" y4="566.0" x5="326.0" y5="696.0" x6="287.0" y6="696.0" x7="266.0" y7="696.0" x8="266.0" y8="566.0">
+   </Junction>
+   <Junction junctionType="1" radAngle="0.0" Actuated="0" Adaptive="0" x0="600.0" y0="566.0" x1="570.0" y1="636.0" x2="600.0" y2="636.0" x3="630.0" y3="636.0" x4="630.0" y4="566.0" x5="630.0" y5="696.0" x6="600.0" y6="696.0" x7="570.0" y7="696.0" x8="570.0" y8="566.0">
+   </Junction>
+   
+   <Road Busyness="25" Lanes="111000000" X0="8" Y0="164" name="road0" X1="253" Y1="164" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="321" Y0="164" name="road0" X1="570" Y1="164" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="287" Y0="436" name="road0" X1="287" Y1="184" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="287" Y0="144" name="road0" X1="288" Y1="8" name="road1">
+   </Road>
+
+   <Road Busyness="25" Lanes="111000000" X0="600" Y0="144" name="road0" X1="600" Y1="8" name="road1">
+   </Road>   
+   <Road Busyness="25" Lanes="111000000" X0="638" Y0="164" name="road0" X1="992" Y1="164" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="600" Y0="436" name="road0" X1="600" Y1="184" name="road1">
+   </Road>
+   
+   <Road Busyness="25" Lanes="111000000" X0="630" Y0="366" name="road0" X1="992" Y1="366" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="600" Y0="504" name="road0" X1="600" Y1="636" name="road1">
+   </Road>
+   
+   <Road Busyness="25" Lanes="111000000" X0="326" Y0="366" name="road0" X1="570" Y1="366" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="287" Y0="496" name="road0" X1="287" Y1="636" name="road1">
+   </Road>
+
+   <Road Busyness="25" Lanes="111000000" X0="630" Y0="566" name="road0" X1="992" Y1="566" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="600" Y0="696" name="road0" X1="600" Y1="744" name="road1">
+   </Road>
+  
+   <Road Busyness="25" Lanes="111000000" X0="326" Y0="566" name="road0" X1="570" Y1="566" name="road1">
+   </Road>
+   <Road Busyness="25" Lanes="111000000" X0="8" Y0="566" name="road0" X1="266" Y1="566" name="road1">
+   </Road>
+   
+  </Design_Canvass>
+ </Road_InfraStructure>
+</xml>

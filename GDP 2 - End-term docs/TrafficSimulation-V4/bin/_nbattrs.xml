@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="RoadDesigner.java">
+        <attr name="class_dependency_java.awt.event.ComponentListener" stringvalue="RoadDesigner"/>
+        <attr name="class_dependency_XML.XMLSerializable" stringvalue="RoadDesigner"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="RoadDesigner"/>
+        <attr name="SourceSync" bytevalue="0"/>
+        <attr name="class_dependency_java.awt.event.MouseListener" stringvalue="RoadDesigner"/>
+        <attr name="class_dependency_java.awt.event.MouseMotionListener" stringvalue="RoadDesigner"/>
+    </fileobject>
+    <fileobject name="Road.java">
+        <attr name="class_dependency_XML.XMLSerializable" stringvalue="Road"/>
+        <attr name="SourceSync" bytevalue="0"/>
+    </fileobject>
+</attributes>
