@@ -1,0 +1,8 @@
+<xml version="1.0">
+ <Road_InfraStructure Width="608" Height="612" savedSpeed="0" savedTiming="9" BackDropFile="null">
+  <Design_Canvass Width="600" Height="555">
+   <Road Busyness="100" Lanes="101010101" X0="488" Y0="216" name="road0" X1="304" Y1="232" name="road1" X2="80" Y2="112" name="road2">
+   </Road>
+  </Design_Canvass>
+ </Road_InfraStructure>
+</xml>
