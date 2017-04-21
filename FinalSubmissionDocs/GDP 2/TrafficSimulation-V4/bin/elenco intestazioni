@@ -1,0 +1,11 @@
+function TRoad.isEmpty:boolean;
+function TRoad.isEndHandle(point:Point2D):boolean;
+function TRoad.isSingleLane:boolean;
+function TRoad.isSymetrical:boolean;
+function TRoad.isStartHandle(point:Point2D):boolean;
+function TRoad.isInCenterLane(point:Point2D):boolean;
+function TRoad.isSameLaneArrangement(tempRoad:Road):boolean;
+procedure TRoad.checkBoundsWith(l1,l2,l3,l4:Line2D;boundingBox:Rectangle2D);
+function TRoad.isCloseToEdge(p:Point2D; l1:Line2D; l2:Line2D;l3:Line2D;l4:Line2D):boolean;
+function TRoad.clipByBounds(p0:Point2D; l0,l1,l2,l3,l4:Line2D):Point2D;
+function TRoad.extendToBounds(p0:Point2D;Line2D l0,l1,l2,l3,l4:Line2D):Point2D;
